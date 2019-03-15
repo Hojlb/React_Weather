@@ -1,5 +1,6 @@
 body {
   font: serif 14px;
+  color: white;
 }
 
 .wrapper {
@@ -10,7 +11,6 @@ body {
 
   background: rgba(45, 176, 224, 1);
   background: linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
-
 }
 
 .main {
@@ -27,37 +27,33 @@ body {
   background: url("image/forest.jpg") center center no-repeat;
   background-blend-mode: multiply;
   background-color: #484747;
-  border: 2px solid #1f1f1f;
-  border-right: 2px solid #131e29;
   background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000;
+  color: #ffffff;
 }
 
 .form {
-  height: 55vh;
-  padding-top: 100px;
+  height: 150px;
+  padding-top: 50px;
   padding-left: 50px;
-  border-top: 2px solid #113a65;
-  border-bottom: 2px solid #113a65;
-  border-right: 2px solid #113a65;
 }
 
 input[type="text"] {
   background-color: transparent;
-  border: 0;
-  border-bottom: solid 2px #113a65;
+  border: solid 1px #113a65;
+  border-bottom: solid 4px #113a65;
   width: 50%;
-  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   color: #fff;
   font-weight: lighter;
   margin-bottom: 30px;
   margin-right: 20px;
   font-size: 20px;
-  outline: none;
 }
 
 button {
@@ -65,7 +61,7 @@ button {
   border-bottom: 4px solid #103a65;
   padding: 8px 20px;
   margin: 0 2px;
-  border-radius: 2px;
+  border-radius: 15%;
   cursor: pointer;
   background-color: #235d9c;
   color: #fff;
@@ -102,6 +98,16 @@ button:active {
 }
 
 .error {
-  color: #041f3c;
+  color: #fa4a4a;
   font-weight: bold;
+}
+
+.data-weather {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 45px;
 }

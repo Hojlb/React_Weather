@@ -33,7 +33,13 @@ class App extends Component {
 
       this.setState({
         temp: data.main.temp,
+        temp_min: data.main.temp_min,
+        temp_max: data.main.temp_max,
         city: data.name,
+        humidity: data.main.humidity,
+        pressure: data.main.pressure,
+        weather: data.weather[0].description,
+        wind: data.wind.speed,
         country: data.sys.country,
         sunrise: data.sys.sunrise,
         sunset: data.sys.sunset,
@@ -55,7 +61,6 @@ class App extends Component {
     return (
       <div className="wrapper">
         <div className="main">
-          <div className="container">
             <div className='row'>
               <div className='col-sm-5 info'><Info /></div>
               <div className='col-sm-7 form'>
@@ -67,7 +72,7 @@ class App extends Component {
                 sunrise={this.state.sunrise}
                 sunset={this.state.sunset}
                 error={this.state.error}
-              /> </div>
+              />
             </div>
           </div>
         </div>

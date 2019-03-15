@@ -4,7 +4,7 @@ const WeatherRequest = (props) => {
   return (
      <div >
         { props.city &&
-          <div className='info'>
+          <div className='data-weather'>
             <p>Location: {props.city}, {props.country}</p>
             <p>Temperatyre: {props.temp}</p>
             <p>Sunrise: {props.sunrise}</p>
